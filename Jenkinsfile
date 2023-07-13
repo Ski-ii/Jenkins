@@ -9,7 +9,11 @@ pipeline {
     stage("create a file"){
       steps{
         sh "touch ~/jenkins-test/testfile"
-
+      }
+    } 
+    stage("Write command"){
+      steps{
+        sh "echo "Hello World"
       }
     }
   }
