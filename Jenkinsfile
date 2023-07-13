@@ -7,8 +7,8 @@ pipeline {
       }
     }
     stage("create a file"){
-      steps {
-        sh “touch ~/jenkins-test/testfile ”
+      steps{
+        sh “touch ~/jenkins-test/testfile”
 
       }
     }
