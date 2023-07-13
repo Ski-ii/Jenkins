@@ -1,14 +1,14 @@
 pipeline {
   agent any
   stages {
-    stage('Pipeline Stages'){
+    stage("make a directory"){
       steps {
-        sh "ls"
+        sh "mkdir ~/jenkins-test"
       }
     }
-    stage(‘second stage’){
+    stage(‘create a file’){
       steps {
-        sh “pwd”
+        sh “touch ~/jenkins-test/testfile ”
 
       }
     }
