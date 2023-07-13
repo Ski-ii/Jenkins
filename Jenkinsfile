@@ -6,7 +6,7 @@ pipeline {
         sh "mkdir ~/jenkins-test"
       }
     }
-    stage(‘create a file’){
+    stage("create a file"){
       steps {
         sh “touch ~/jenkins-test/testfile ”
 
