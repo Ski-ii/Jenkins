@@ -11,9 +11,9 @@ pipeline {
         sh "touch ~/jenkins-test/testfile"
       }
     } 
-    stage("Write command"){
+    stage("List"){
       steps{
-        sh "echo "Hello World"
+        sh "ls"
       }
     }
   }
